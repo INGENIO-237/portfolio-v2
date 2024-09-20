@@ -31,9 +31,10 @@ export default function MobNavbar() {
                   key={getKey()}
                   className={cn(
                     "text-lg capitalize transition duration-500",
-                    pathname === link.path && "border-l-2 pl-2 border-black",
-                    "hover:border-l-2 hover:pl-2 hover:border-gray-500"
+                    pathname === link.path && "border-l-2 pl-2 border-[#2a9d8f] text-[#2a9d8f]",
+                    "hover:border-l-2 hover:pl-2 hover:border-[#2a9d8f]"
                   )}
+                  onClick={toggleSheet}
                 >
                   {link.name}
                 </Link>
