@@ -5,10 +5,8 @@ import Navbar from "./partials/Navbar";
 
 export default function Header() {
   return (
-    <div className="py-2 md:py-5 flex items-center justify-between">
-      <div className="logo">
-        <Image src={Logo} width={80} height={80} alt="Logo" priority />
-      </div>
+    <div className="py-2 md:py-5 flex items-center justify-between container">
+      <Image src={Logo} width={80} height={80} alt="Logo" priority className="-ml-2" />
 
       {/* Nav */}
       <MobNavbar />
