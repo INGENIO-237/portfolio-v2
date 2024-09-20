@@ -30,8 +30,9 @@ export default function MobNavbar() {
                   href={link.path}
                   key={getKey()}
                   className={cn(
-                    "text-lg capitalize",
-                    pathname === link.path && "border-l-5 border-black"
+                    "text-lg capitalize transition duration-500",
+                    pathname === link.path && "border-l-2 pl-2 border-black",
+                    "hover:border-l-2 hover:pl-2 hover:border-gray-500"
                   )}
                 >
                   {link.name}

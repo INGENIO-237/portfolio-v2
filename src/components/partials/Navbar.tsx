@@ -17,10 +17,10 @@ export default function Navbar() {
               href={link.path}
               key={getKey()}
               className={cn(
-                "text-lg",
+                "text-lg capitalize",
                 pathname == link.path && "border-b-2 border-black",
                 "hover:border-b-2 hover:border-gray-500 transition duration-500",
-                
+
               )}
             >
               {link.name}
