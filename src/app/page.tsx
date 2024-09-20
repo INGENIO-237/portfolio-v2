@@ -193,15 +193,43 @@ export default function Home() {
               title="VSCode"
               className="hover:text-blue-500 transition duration-500"
             />
-            <FaAws size={50} title="AWS" className="hover:text-orange-500 transition duration-500" />
-            <SiDocker size={50} title="Docker" className="hover:text-blue-500 transition duration-500" />
-            <SiGit size={50} title="Git" className="hover:text-orange-600 transition duration-500" />
+            <FaAws
+              size={50}
+              title="AWS"
+              className="hover:text-orange-500 transition duration-500"
+            />
+            <SiDocker
+              size={50}
+              title="Docker"
+              className="hover:text-blue-500 transition duration-500"
+            />
+            <SiGit
+              size={50}
+              title="Git"
+              className="hover:text-orange-600 transition duration-500"
+            />
             <SiGithub size={50} title="Github" />
-            <SiPostman size={50} title="Postman" className="hover:text-orange-500 transition duration-500" />
-            <SiKubernetes size={50} title="Kubernetes" className="hover:text-blue-600 transition duration-500" />
+            <SiPostman
+              size={50}
+              title="Postman"
+              className="hover:text-orange-500 transition duration-500"
+            />
+            <SiKubernetes
+              size={50}
+              title="Kubernetes"
+              className="hover:text-blue-600 transition duration-500"
+            />
             <SiLinux size={50} title="Linux" />
-            <SiGitlab size={50} title="Gitlab"  className="hover:text-orange-500 transition duration-500" />
-            <SiTerraform size={50} title="Terraform" className="hover:text-violet-600 transition duration-500" />
+            <SiGitlab
+              size={50}
+              title="Gitlab"
+              className="hover:text-orange-500 transition duration-500"
+            />
+            <SiTerraform
+              size={50}
+              title="Terraform"
+              className="hover:text-violet-600 transition duration-500"
+            />
             <SiAnsible size={50} title="Ansible" />
           </motion.div>
         )}
