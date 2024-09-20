@@ -4,9 +4,34 @@ import Image from "next/image";
 import Avatar from "@/public/images/avatar.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Linkedin } from "lucide-react";
 import { getKey } from "@/lib/utils";
+
+// Technologies
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+  SiJavascript,
+  SiDocker,
+  SiGit,
+  SiGithub,
+  SiPostman,
+  SiKubernetes,
+  SiGitlab,
+  SiTerraform,
+  SiAnsible,
+  SiPython,
+  SiVisualstudiocode,
+  SiLinux,
+} from "react-icons/si";
+import { useRef } from "react";
+import { FaAws } from "react-icons/fa6";
 
 export default function Home() {
   const socials = [
@@ -15,6 +40,11 @@ export default function Home() {
       link: "https://www.linkedin.com/in/ben-hamadou-abdel-kalif-671111228",
     },
   ];
+
+  const techsRef = useRef(null);
+  const techsInView = useInView(techsRef);
+  const toolsRef = useRef(null);
+  const toolsInView = useInView(toolsRef);
 
   return (
     <>
@@ -74,16 +104,107 @@ export default function Home() {
           </div>
         </motion.div>
       </motion.div>
-      <motion.div className="mt-5">
-        <h1 className="text-2xl font-bold">What I speak</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quod
-          quibusdam hic architecto autem numquam ipsam necessitatibus nisi
-          doloribus voluptatibus?
-        </p>
-        <div>
-          <Image src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" width={100} height={100} />
+      <motion.div
+        ref={techsRef}
+        className="my-10 space-y-5 flex flex-col md:flex-row md:items-center md:justify-between"
+      >
+        <div className="md:max-w-[450px]">
+          <h1 className="text-3xl font-bold">What I speak</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            quod quibusdam hic architecto autem numquam ipsam necessitatibus
+            nisi doloribus voluptatibus?
+          </p>
         </div>
+        {techsInView && (
+          <motion.div
+            initial={{ opacity: 0, translateX: 50 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            exit={{ opacity: 0, translateX: 50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex flex-wrap justify-around gap-5"
+          >
+            <SiJavascript
+              size={50}
+              title="JavaScript"
+              className="hover:text-yellow-500 transition duration-500"
+            />
+            <SiTypescript
+              size={50}
+              title="Typescript"
+              className="hover:text-blue-500 transition duration-500"
+            />
+            <SiNodedotjs
+              size={50}
+              title="NodeJS"
+              className="hover:text-green-600 transition duration-500"
+            />
+            <SiExpress
+              size={50}
+              title="Express"
+              className="hover:text-gray-500 transition duration-500"
+            />
+            <SiMongodb
+              size={50}
+              title="MongoDB"
+              className="hover:text-green-500 transition duration-500"
+            />
+            <SiPython
+              size={50}
+              title="Python"
+              className="hover:text-yellow-500 transition duration-500"
+            />
+            <SiReact
+              size={50}
+              title="React"
+              className="hover:text-blue-400 transition duration-500"
+            />
+            <SiNextdotjs size={50} title="NextJS" />
+            <SiTailwindcss
+              size={50}
+              title="TailwindCSS"
+              className="hover:text-blue-500 transition duration-500"
+            />
+          </motion.div>
+        )}
+      </motion.div>
+      <motion.div
+        ref={toolsRef}
+        className="my-10 space-y-5 flex flex-col md:flex-row md:items-center md:justify-between"
+      >
+        <div className="md:max-w-[450px]">
+          <h1 className="text-3xl font-bold">What I use</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            quod quibusdam hic architecto autem numquam ipsam necessitatibus
+            nisi doloribus voluptatibus?
+          </p>
+        </div>
+        {toolsInView && (
+          <motion.div
+            initial={{ opacity: 0, translateX: 50 }}
+            animate={{ opacity: 1, translateX: 0 }}
+            exit={{ opacity: 0, translateX: 50 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex flex-wrap justify-around gap-5"
+          >
+            <SiVisualstudiocode
+              size={50}
+              title="VSCode"
+              className="hover:text-blue-500 transition duration-500"
+            />
+            <FaAws size={50} title="AWS" className="hover:text-orange-500 transition duration-500" />
+            <SiDocker size={50} title="Docker" className="hover:text-blue-500 transition duration-500" />
+            <SiGit size={50} title="Git" className="hover:text-orange-600 transition duration-500" />
+            <SiGithub size={50} title="Github" />
+            <SiPostman size={50} title="Postman" className="hover:text-orange-500 transition duration-500" />
+            <SiKubernetes size={50} title="Kubernetes" className="hover:text-blue-600 transition duration-500" />
+            <SiLinux size={50} title="Linux" />
+            <SiGitlab size={50} title="Gitlab"  className="hover:text-orange-500 transition duration-500" />
+            <SiTerraform size={50} title="Terraform" className="hover:text-violet-600 transition duration-500" />
+            <SiAnsible size={50} title="Ansible" />
+          </motion.div>
+        )}
       </motion.div>
     </>
   );
