@@ -31,7 +31,7 @@ export default function Page() {
     <>
       <div className="max-w-[500px] space-y-5">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-          Timeline of my professional journey
+          Timeline of my <span className="text-[#2a9d8f]">professional</span> journey
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
@@ -51,7 +51,7 @@ export default function Page() {
           >
             <h3 className="font-bold flex gap-2 text-2xl">
               <span>᛫</span>
-              <span>{exp.position}</span>
+              <span className="text-[#2a9d8f]">{exp.position}</span>
             </h3>
             <div className="p-5 border-l-4 border-dotted">
               <h3 className="font-bold text-xl">{exp.period}</h3>
@@ -76,7 +76,7 @@ export default function Page() {
               <span>{exp.period}</span>
             </h3>
             <div className="p-5 border-l-4 border-dotted">
-              <h3 className="font-bold text-xl">{exp.position}</h3>
+              <h3 className="font-bold text-xl text-[#2a9d8f]">{exp.position}</h3>
               <p>{exp.company}</p>
             </div>
           </motion.div>

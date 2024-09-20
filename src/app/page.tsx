@@ -67,8 +67,8 @@ export default function Home() {
             Hey, I&apos;m Ben Hamadou (INGENIO)
           </h1>
           <p className="text-lg">
-            I am a full-stack software engineer with over 3 years of
-            professional experience, specializing in backend development. My
+            I am a full-stack software engineer with over <span className="text-[#2a9d8f]">3 years of
+            professional experience</span>, specializing in <span className="text-[#2a9d8f]">backend</span> development. My
             expertise lies in crafting robust and scalable SaaS-based
             architectures on the Amazon AWS platform.
           </p>
@@ -98,7 +98,7 @@ export default function Home() {
             <Link href="/contact">
               <Button>Get In Touch</Button>
             </Link>
-            <Button variant="outline" className="p-2">
+            <Button className="p-2 bg-[#2a9d8f] hover:bg-white hover:text-[#2a9d8f]">
               Download CV
             </Button>
           </div>

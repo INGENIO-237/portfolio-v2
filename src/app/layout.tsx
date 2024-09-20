@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import Wrapper from "@/components/AppWrapper";
 
-const nunito = Nunito({
+const nunito = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
