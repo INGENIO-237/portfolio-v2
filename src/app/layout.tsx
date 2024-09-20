@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Nunito, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import Wrapper from "@/components/AppWrapper";
+import Footer from "@/components/Footer";
 
-const nunito = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "600"],
 });
 
 export const metadata: Metadata = {
@@ -23,9 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(nunito.className, "antialiased min-h-screen")}>
+      <body className={cn(poppins.className, "antialiased min-h-screen")}>
         <Header />
-        <Wrapper>{children}</Wrapper>
+        <Wrapper>
+          {children}
+          <Footer />
+        </Wrapper>
       </body>
     </html>
   );
