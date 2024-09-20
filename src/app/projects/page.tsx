@@ -49,7 +49,8 @@ export default function Page() {
     <>
       <div className="max-w-[500px] space-y-5">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-          A registry of the projects I&apos;ve worked on this far
+          A registry of the <span className="text-[#2a9d8f]">projects</span>{" "}
+          I&apos;ve worked on this far
         </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
