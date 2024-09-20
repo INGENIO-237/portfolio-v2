@@ -22,7 +22,7 @@ export default function MobNavbar() {
       <AlignRight size={25} onClick={toggleSheet} />
 
       <Sheet open={showSheet} onOpenChange={toggleSheet}>
-        <SheetContent className="bg-[#FEFEFE]">
+        <SheetContent className="bg-[#FEFEFE] z-[100]">
           <ul className="flex flex-col mt-5 space-y-3">
             {navLinks.map((link) => {
               return (
