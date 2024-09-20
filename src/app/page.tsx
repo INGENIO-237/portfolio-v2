@@ -17,7 +17,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex-1">
+    <>
       {/* Intro */}
       <motion.div
         initial={{ opacity: 0, translateY: 30 }}
@@ -68,12 +68,12 @@ export default function Home() {
             <Link href="/contact">
               <Button>Get In Touch</Button>
             </Link>
-            < Button variant="outline" className="p-2">
+            <Button variant="outline" className="p-2">
               Download CV
             </Button>
           </div>
         </motion.div>
       </motion.div>
-    </div>
+    </>
   );
 }

@@ -34,6 +34,7 @@ export default function MobNavbar() {
                     pathname === link.path && "border-l-2 pl-2 border-[#2a9d8f] text-[#2a9d8f]",
                     "hover:border-l-2 hover:pl-2 hover:border-[#2a9d8f]"
                   )}
+                  onClick={toggleSheet}
                 >
                   {link.name}
                 </Link>

@@ -3,6 +3,7 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
+import Wrapper from "@/components/AppWrapper";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(nunito.className, "antialiased min-h-screen")}>
         <Header />
-        <main className="container">{children}</main>
+        <Wrapper>{children}</Wrapper>
       </body>
     </html>
   );
