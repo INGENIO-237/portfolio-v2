@@ -18,8 +18,8 @@ export default function Navbar() {
               key={getKey()}
               className={cn(
                 "text-lg capitalize",
-                pathname == link.path && "border-b-2 border-black",
-                "hover:border-b-2 hover:border-gray-500 transition duration-500",
+                pathname == link.path && "border-b-2 border-[#2a9d8f] text-[#2a9d8f]",
+                "hover:border-b-2 hover:border-[#2a9d8f] transition duration-500",
 
               )}
             >
