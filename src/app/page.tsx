@@ -74,6 +74,17 @@ export default function Home() {
           </div>
         </motion.div>
       </motion.div>
+      <motion.div className="mt-5">
+        <h1 className="text-2xl font-bold">What I speak</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quod
+          quibusdam hic architecto autem numquam ipsam necessitatibus nisi
+          doloribus voluptatibus?
+        </p>
+        <div>
+          <Image src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" width={100} height={100} />
+        </div>
+      </motion.div>
     </>
   );
 }

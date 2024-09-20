@@ -58,21 +58,21 @@ export default function Page() {
         </p>
       </div>
       <div className="w-full flex flex-col md:flex-wrap md:flex-row md:justify-around mt-5">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <motion.div
             initial={{ opacity: 0, translateX: 30 }}
             animate={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
             key={getKey()}
-            className="w-full md:w-[40%] lg:w-[30%] my-5 p-3 space-y-2"
+            className="w-full md:w-[40%] lg:w-[30%] my-5 p-3 space-y-2 hover:bg-zinc-100 transition-colors duration-300"
           >
             <h2 className="font-bold text-2xl">{project.title}</h2>
             <p className="text-md">{project.description}</p>
             <Link
               href={project.link}
               target="_blank"
-              className="text-blue-500 hover:underline flex items-center gap-2"
+              className="text-[#2a9d8f]  hover:underline flex items-center gap-2"
             >
               <LinkIcon size={15} /> <h1>{project.link}</h1>
             </Link>
