@@ -3,10 +3,10 @@ export const navLinks = [
     name: "home",
     path: "/",
   },
-  {
-    name: "experience",
-    path: "/experience",
-  },
+  // {
+  //   name: "experience",
+  //   path: "/experience",
+  // },
   {
     name: "projects",
     path: "/projects",
