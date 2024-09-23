@@ -101,7 +101,7 @@ export default function Home() {
             <Link href="/contact">
               <Button>Get In Touch</Button>
             </Link>
-            <Button className="p-2 bg-[#2a9d8f] hover:bg-white hover:text-[#2a9d8f] transition duration-500">
+            <Button className="p-2 bg-p_green text-white hover:bg-white hover:text-p_green transition duration-500">
               Download CV
             </Button>
           </div>

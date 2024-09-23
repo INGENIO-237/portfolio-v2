@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import tailwindAnimate from "tailwindcss-animate";
 
 const config: Config = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,8 +13,10 @@ const config: Config = {
       padding: "2rem",
       center: true,
     },
+
     extend: {
       colors: {
+        p_green: "#2a9d8f",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

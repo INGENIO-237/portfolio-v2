@@ -4,14 +4,9 @@ import Link from "next/link";
 import { navLinks } from "./nav.utils";
 import { cn, getKey } from "@/lib/utils";
 import { usePathname } from "next/navigation";
-import { Moon, Sun } from "lucide-react";
+import ThemeToggle from "../ThemeToggle";
 
-type Props = {
-  theme: "light" | "dark";
-  setTheme: () => void;
-};
-
-export default function Navbar({ theme, setTheme }: Props) {
+export default function Navbar() {
   const pathname = usePathname();
 
   return (
@@ -23,10 +18,10 @@ export default function Navbar({ theme, setTheme }: Props) {
               href={link.path}
               key={getKey()}
               className={cn(
-                "text-lg capitalize",
+                "text-md capitalize",
                 pathname == link.path &&
-                  "border-b-2 border-[#2a9d8f] text-[#2a9d8f]",
-                "hover:border-b-2 hover:border-[#2a9d8f] transition duration-500"
+                  "border-b-2 border-p_green text-p_green",
+                "hover:border-b-2 hover:border-p_green transition duration-500"
               )}
             >
               {link.name}
@@ -34,23 +29,7 @@ export default function Navbar({ theme, setTheme }: Props) {
           );
         })}
       </ul>
-      <div className="flex gap-5">
-        {theme === "light" ? (
-          <Sun
-            size={25}
-            className="cursor-pointer"
-            color="gray"
-            onClick={() => setTheme()}
-          />
-        ) : (
-          <Moon
-            size={25}
-            className="cursor-pointer"
-            color="gray"
-            onClick={() => setTheme()}
-          />
-        )}
-      </div>
+      <ThemeToggle />
     </div>
   );
 }
