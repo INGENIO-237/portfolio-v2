@@ -5,8 +5,8 @@ import Avatar from "@/public/images/avatar.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { motion, useInView } from "framer-motion";
-import { Linkedin } from "lucide-react";
-import { getKey } from "@/lib/utils";
+// import { Linkedin } from "lucide-react";
+// import { getKey } from "@/lib/utils";
 
 // Technologies
 import {
@@ -34,12 +34,12 @@ import { useRef } from "react";
 import { FaAws } from "react-icons/fa6";
 
 export default function Home() {
-  const socials = [
-    {
-      icon: <Linkedin size={25} />,
-      link: "https://www.linkedin.com/in/ben-hamadou-abdel-kalif-671111228",
-    },
-  ];
+  // const socials = [
+  //   {
+  //     icon: <Linkedin size={25} />,
+  //     link: "https://www.linkedin.com/in/ben-hamadou-abdel-kalif-671111228",
+  //   },
+  // ];
 
   const techsRef = useRef(null);
   const techsInView = useInView(techsRef);
@@ -68,12 +68,12 @@ export default function Home() {
           </h1>
           <p className="text-lg">
             I am a full-stack software engineer with over{" "}
-            <span className="text-[#2a9d8f]">
+            <span className="text-p_green">
               3 years of professional experience
             </span>
-            , specializing in <span className="text-[#2a9d8f]">backend</span>{" "}
-            development. My expertise lies in crafting robust and scalable
-            SaaS-based architectures on the Amazon AWS platform.
+            , specializing in <span className="text-p_green">backend</span>{" "}
+            development, and a <span className="text-p_green">DevOps</span> enthusiast. My expertise lies in crafting robust and scalable
+            systems that meet the customers&apos; needs.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
           className="my-5 flex gap-3 items-center flex-col md:flex-row"
         >
           {/* Socials */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             {socials.map((social) => (
               <Link
                 key={getKey()}
@@ -95,7 +95,7 @@ export default function Home() {
                 {social.icon}
               </Link>
             ))}
-          </div>
+          </div> */}
           {/* Buttons */}
           <div className="flex gap-3">
             <Link href="/contact">
@@ -118,9 +118,8 @@ export default function Home() {
         <div className="md:max-w-[450px]">
           <h1 className="text-3xl font-bold">What I speak</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            quod quibusdam hic architecto autem numquam ipsam necessitatibus
-            nisi doloribus voluptatibus?
+            Can&apos;t say that am a native speaker, but, am kinda fluent and
+            at my ease.
           </p>
         </div>
         {techsInView && (
@@ -182,9 +181,7 @@ export default function Home() {
         <div className="md:max-w-[450px]">
           <h1 className="text-3xl font-bold">What I use</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            quod quibusdam hic architecto autem numquam ipsam necessitatibus
-            nisi doloribus voluptatibus?
+            Harry Potter without a wand is just a boy trying to be a wizard. Fortunately, I have many wands that help me do the job.
           </p>
         </div>
         {toolsInView && (
