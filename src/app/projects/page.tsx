@@ -66,7 +66,7 @@ export default function Page() {
             transition={{ duration: 0.5, delay: 0.2 }}
             whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
             key={getKey()}
-            className="w-full md:w-[40%] lg:w-[30%] my-5 p-3 space-y-2 hover:bg-zinc-100 transition-colors duration-300"
+            className="w-full md:w-[40%] lg:w-[30%] my-5 p-3 space-y-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors duration-300"
           >
             <h2 className="font-bold text-2xl">{project.title}</h2>
             <p className="text-md">{project.description}</p>
