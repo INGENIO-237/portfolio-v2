@@ -8,38 +8,52 @@ import Link from "next/link";
 export default function Page() {
   const projects = [
     {
-      title: "Project 1",
+      title: "Toolbox",
       roles: ["Project Lead", "Developer"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci optio cumque suscipit quae nostrum nihil, consectetur aut nemo ex!",
+        "A multi-region payment aggregator for seamless integration of online payments(Stripe & Mobile payments) and SMS(Twilio) sending features, that aims to reduce internal projects development time, and increase developers' productivity.",
       link: "https://link.dev",
     },
     {
-      title: "Project 2",
-      roles: ["Developer"],
+      title: "First Event",
+      roles: ["Project Lead", "Developer"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci optio cumque suscipit quae nostrum nihil, consectetur aut nemo ex!",
+        "Events management and ticketing platform based in Canada. The service enables users to search for, create and promote local events.",
       link: "https://link.dev",
     },
     {
-      title: "Project 3",
+      title: "YaFoot-FC",
       roles: ["Developer"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci optio cumque suscipit quae nostrum nihil, consectetur aut nemo ex!",
+        "A web platform for managing the internal activities of the Yaounde II FC (YaFoot). Supporters can buy member's cards, articles(jerseys, goodies, etc...), and make donations to the club.",
       link: "https://link.dev",
     },
     {
-      title: "Project 4",
+      title: "Pokedex",
       roles: ["Developer"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci optio cumque suscipit quae nostrum nihil, consectetur aut nemo ex!",
+        "A (hobby) mobile app that takes advantage of the pokeApi, to display a list of pokemons, filter/sort them, and get details on a given pokemon.",
       link: "https://link.dev",
     },
     {
-      title: "Project 5",
+      title: "MYWAY Voyage",
       roles: ["Developer"],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci optio cumque suscipit quae nostrum nihil, consectetur aut nemo ex!",
+        "Website of the travelling agency MYWAY Voyage. It presents the different services offered by the agency, such as: Foreign study visa, Foreign work visa, etc...",
+      link: "https://link.dev",
+    },
+    {
+      title: "Evenafro",
+      roles: ["Developer"],
+      description:
+        "Events mobile platform based in Canada that aims to promote Black-African culture by allowing its users browse for local events.",
+      link: "https://link.dev",
+    },
+    {
+      title: "TV Box",
+      roles: ["Developer"],
+      description:
+        "Website of a merchant based in Canada that sells TV Boxes. The website aims to presents its products and their features.",
       link: "https://link.dev",
     },
     // Add more projects as needed
@@ -53,9 +67,8 @@ export default function Page() {
           I&apos;ve worked on this far
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-          adipisci optio cumque suscipit quae nostrum nihil, consectetur aut
-          nemo ex!
+          Trying to learn everyday, here is a list of most of the project
+          I&apos;ve worked on so far.
         </p>
       </div>
       <div className="w-full flex flex-col md:flex-wrap md:flex-row md:justify-around mt-5">
@@ -73,7 +86,7 @@ export default function Page() {
             <Link
               href={project.link}
               target="_blank"
-              className="text-[#2a9d8f]  hover:underline flex items-center gap-2"
+              className="text-[#2a9d8f]  hover:underline flex items-center gap-2 flex-1/3"
             >
               <LinkIcon size={15} /> <h1>{project.link}</h1>
             </Link>
