@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import Logo from "@/public/images/ingenio.png";
+import Logo from "@/public/images/ingenio-2.png";
 import MobNavbar from "./partials/MobNavbar";
 import Navbar from "./partials/Navbar";
 import Link from "next/link";
