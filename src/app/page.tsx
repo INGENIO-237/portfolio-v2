@@ -5,8 +5,6 @@ import Avatar from "@/public/images/avatar.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { motion, useInView } from "framer-motion";
-// import { Linkedin } from "lucide-react";
-// import { getKey } from "@/lib/utils";
 
 // Technologies
 import {
@@ -34,13 +32,6 @@ import { useRef } from "react";
 import { FaAws } from "react-icons/fa6";
 
 export default function Home() {
-  // const socials = [
-  //   {
-  //     icon: <Linkedin size={25} />,
-  //     link: "https://www.linkedin.com/in/ben-hamadou-abdel-kalif-671111228",
-  //   },
-  // ];
-
   const techsRef = useRef(null);
   const techsInView = useInView(techsRef);
   const toolsRef = useRef(null);
@@ -83,19 +74,6 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.8, ease: "easeInOut" }}
           className="my-5 flex gap-3 items-center flex-col md:flex-row"
         >
-          {/* Socials */}
-          {/* <div className="flex items-center">
-            {socials.map((social) => (
-              <Link
-                key={getKey()}
-                href={social.link}
-                target="_blank"
-                className="p-2"
-              >
-                {social.icon}
-              </Link>
-            ))}
-          </div> */}
           {/* Buttons */}
           <div className="flex gap-3">
             <Link href="/contact">
