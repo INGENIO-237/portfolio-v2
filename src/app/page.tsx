@@ -37,6 +37,17 @@ export default function Home() {
   const toolsRef = useRef(null);
   const toolsInView = useInView(toolsRef);
 
+  const fileId = "1Su1XYpFEsDkMtHzW4bFYOA_gBAWn33zO";
+  const resumeURL = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+  function handleDownloadResume() {
+    const a = document.createElement("a");
+    a.href = resumeURL;
+    a.download = "Ben_Hamadou_Resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+  }
+
   return (
     <>
       {/* Intro */}
@@ -63,7 +74,8 @@ export default function Home() {
               3 years of professional experience
             </span>
             , specializing in <span className="text-p_green">backend</span>{" "}
-            development, and a <span className="text-p_green">DevOps</span> enthusiast. My expertise lies in crafting robust and scalable
+            development, and a <span className="text-p_green">DevOps</span>{" "}
+            enthusiast. My expertise lies in crafting robust and scalable
             systems that meet the customers&apos; needs.
           </p>
         </div>
@@ -79,7 +91,10 @@ export default function Home() {
             <Link href="/contact">
               <Button>Get In Touch</Button>
             </Link>
-            <Button className="p-2 bg-p_green text-white hover:bg-white hover:text-p_green transition duration-500">
+            <Button
+              className="p-2 bg-p_green text-white hover:bg-white hover:text-p_green transition duration-500"
+              onClick={handleDownloadResume}
+            >
               Download CV
             </Button>
           </div>
@@ -96,8 +111,8 @@ export default function Home() {
         <div className="md:max-w-[450px]">
           <h1 className="text-3xl font-bold">What I speak</h1>
           <p>
-            Can&apos;t say that am a native speaker, but, am kinda fluent and
-            at my ease.
+            Can&apos;t say that am a native speaker, but, am kinda fluent and at
+            my ease.
           </p>
         </div>
         {techsInView && (
@@ -159,7 +174,8 @@ export default function Home() {
         <div className="md:max-w-[450px]">
           <h1 className="text-3xl font-bold">What I use</h1>
           <p>
-            Harry Potter without a wand is just a boy trying to be a wizard. Fortunately, I have many wands that help me do the job.
+            Harry Potter without a wand is just a boy trying to be a wizard.
+            Fortunately, I have many wands that help me do the job.
           </p>
         </div>
         {toolsInView && (

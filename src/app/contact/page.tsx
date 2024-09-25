@@ -31,7 +31,7 @@ export default function Page() {
     <div className="min-h-[85vh]">
       <div className="max-w-[500px] space-y-5 my-5">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-          Let&apos; <span className="text-p_green">connect</span>
+          Let&apos;s <span className="text-p_green">connect</span>
         </h1>
         <p>
           Let me hear from you and <span className="text-p_green">learn</span>{" "}
