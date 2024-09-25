@@ -12,7 +12,7 @@ export default function Page() {
       roles: ["Project Lead", "Developer"],
       description:
         "A multi-region payment aggregator for seamless integration of online payments(Stripe & Mobile payments) and SMS(Twilio) sending features, that aims to reduce internal projects development time, and increase developers' productivity.",
-      link: "https://link.dev",
+      link: "https://shorturl.at/jnLGo",
     },
     {
       title: "First Event",
@@ -22,11 +22,18 @@ export default function Page() {
       link: "https://link.dev",
     },
     {
+      title: "Latrice",
+      roles: ["Project Lead", "Developer"],
+      description:
+        "A hair style service based in the US that connects hair style professionals and customers",
+      link: "https://shorturl.at/e5oQf",
+    },
+    {
       title: "YaFoot-FC",
       roles: ["Developer"],
       description:
         "A web platform for managing the internal activities of the Yaounde II FC (YaFoot). Supporters can buy member's cards, articles(jerseys, goodies, etc...), and make donations to the club.",
-      link: "https://link.dev",
+      link: "https://shorturl.at/q9fGA",
     },
     {
       title: "Pokedex",
@@ -40,14 +47,14 @@ export default function Page() {
       roles: ["Developer"],
       description:
         "Website of the travelling agency MYWAY Voyage. It presents the different services offered by the agency, such as: Foreign study visa, Foreign work visa, etc...",
-      link: "https://link.dev",
+      link: "https://mw-voyage.vercel.app/",
     },
     {
       title: "Evenafro",
       roles: ["Developer"],
       description:
         "Events mobile platform based in Canada that aims to promote Black-African culture by allowing its users browse for local events.",
-      link: "https://link.dev",
+      link: "https://evenafro.com",
     },
     {
       title: "TV Box",
@@ -56,18 +63,24 @@ export default function Page() {
         "Website of a merchant based in Canada that sells TV Boxes. The website aims to presents its products and their features.",
       link: "https://link.dev",
     },
-    // Add more projects as needed
+    {
+      title: "IME-SCHOOL",
+      roles: ["Developer"],
+      description:
+        "Website of IME-SCHOOL, it presents the different programs and fields of study present there.",
+      link: "https://www.ime-school.com/",
+    },
   ];
 
   return (
     <>
       <div className="max-w-[500px] space-y-5">
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-          A registry of the <span className="text-[#2a9d8f]">projects</span>{" "}
+          A registry of the <span className="text-p_green">projects</span>{" "}
           I&apos;ve worked on this far
         </h1>
         <p>
-          Trying to learn everyday, here is a list of most of the project
+          Trying to learn everyday, here is a list of most of the projects
           I&apos;ve worked on so far.
         </p>
       </div>
@@ -86,7 +99,7 @@ export default function Page() {
             <Link
               href={project.link}
               target="_blank"
-              className="text-[#2a9d8f]  hover:underline flex items-center gap-2 flex-1/3"
+              className="text-p_green  hover:underline flex items-center gap-2 flex-1/3"
             >
               <LinkIcon size={15} /> <h1>{project.link}</h1>
             </Link>
