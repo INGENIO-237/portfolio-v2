@@ -27,6 +27,9 @@ import {
   SiPython,
   SiVisualstudiocode,
   SiLinux,
+  SiNestjs,
+  SiFastapi,
+  SiPostgresql,
 } from "react-icons/si";
 import { useRef } from "react";
 import { FaAws } from "react-icons/fa6";
@@ -42,8 +45,9 @@ export default function Home() {
 
   function handleDownloadResume() {
     const a = document.createElement("a");
-    a.href = resumeURL;
+    a.href = "https://cvdesignr.com/p/671444ff85525";
     a.download = "Ben_Hamadou_Resume.pdf";
+    a.target = "_blank";
     document.body.appendChild(a);
     a.click();
   }
@@ -55,7 +59,7 @@ export default function Home() {
         initial={{ opacity: 0, translateY: 30 }}
         animate={{ translateY: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
-        className="w-full flex flex-col items-center justify-center"
+        className="w-full h-screen flex flex-col items-center justify-center"
       >
         <Image
           src={Avatar}
@@ -69,14 +73,14 @@ export default function Home() {
             Hey, I&apos;m Ben Hamadou (INGENIO)
           </h1>
           <p className="text-lg">
-            I am a full-stack software engineer with over{" "}
-            <span className="text-p_green">
-              3 years of professional experience
-            </span>
-            , specializing in <span className="text-p_green">backend</span>{" "}
-            development, and a <span className="text-p_green">DevOps</span>{" "}
-            enthusiast. My expertise lies in crafting robust and scalable
-            systems that meet the customers&apos; needs.
+            Backend Engineer with{" "}
+            <span className="text-p_green">3+ years worth of experience</span>{" "}
+            in crafting well functioning and reliable backend services. Driven
+            by challenges and learning, I also find interests in{" "}
+            <span className="text-p_green">DevOps</span>,{" "}
+            <span className="text-p_green">Solution Architecture</span> and{" "}
+            <span className="text-p_green">Mentorship</span>. Giving back to the
+            community is the key.
           </p>
         </div>
 
@@ -111,8 +115,8 @@ export default function Home() {
         <div className="md:max-w-[450px]">
           <h1 className="text-3xl font-bold">What I speak</h1>
           <p>
-            Can&apos;t say that am a native speaker, but, am kinda fluent and at
-            my ease.
+            I am not a native speaker, but, I can say that I am fluent and at my
+            ease.
           </p>
         </div>
         {techsInView && (
@@ -123,25 +127,35 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-wrap justify-around gap-5"
           >
-            <SiJavascript
-              size={50}
-              title="JavaScript"
-              className="hover:text-yellow-500 transition duration-500"
-            />
-            <SiTypescript
-              size={50}
-              title="Typescript"
-              className="hover:text-blue-500 transition duration-500"
-            />
             <SiNodedotjs
               size={50}
               title="NodeJS"
               className="hover:text-green-600 transition duration-500"
             />
+            <SiNestjs
+              size={50}
+              title="NestJS"
+              className="hover:text-red-600 transition duration-500"
+            />
+            {/* <SiJavascript
+              size={50}
+              title="JavaScript"
+              className="hover:text-yellow-500 transition duration-500"
+            /> */}
+            <SiTypescript
+              size={50}
+              title="Typescript"
+              className="hover:text-blue-500 transition duration-500"
+            />
             <SiExpress
               size={50}
               title="Express"
               className="hover:text-gray-500 transition duration-500"
+            />
+            <SiPostgresql
+              size={50}
+              title="Postgresql"
+              className="hover:text-blue-500 transition duration-500"
             />
             <SiMongodb
               size={50}
@@ -152,6 +166,11 @@ export default function Home() {
               size={50}
               title="Python"
               className="hover:text-yellow-500 transition duration-500"
+            />
+            <SiFastapi
+              size={50}
+              title="Python"
+              className="hover:text-green-500 transition duration-500"
             />
             <SiReact
               size={50}
@@ -175,7 +194,7 @@ export default function Home() {
           <h1 className="text-3xl font-bold">What I use</h1>
           <p>
             Harry Potter without a wand is just a boy trying to be a wizard.
-            Fortunately, I have many wands that help me do the job.
+            Here are the wands that help me practice my magic.
           </p>
         </div>
         {toolsInView && (
@@ -212,23 +231,23 @@ export default function Home() {
               title="Postman"
               className="hover:text-orange-500 transition duration-500"
             />
-            <SiKubernetes
+            {/* <SiKubernetes
               size={50}
               title="Kubernetes"
               className="hover:text-blue-600 transition duration-500"
-            />
+            /> */}
             <SiLinux size={50} title="Linux" />
             <SiGitlab
               size={50}
               title="Gitlab"
               className="hover:text-orange-500 transition duration-500"
             />
-            <SiTerraform
+            {/* <SiTerraform
               size={50}
               title="Terraform"
               className="hover:text-violet-600 transition duration-500"
             />
-            <SiAnsible size={50} title="Ansible" />
+            <SiAnsible size={50} title="Ansible" /> */}
           </motion.div>
         )}
       </motion.div>
