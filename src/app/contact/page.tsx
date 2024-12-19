@@ -1,5 +1,5 @@
-import { Linkedin } from "lucide-react";
 import { getKey } from "@/lib/utils";
+import { Linkedin } from "lucide-react";
 import Link from "next/link";
 import { SiGithub, SiGmail, SiWakatime } from "react-icons/si";
 
