@@ -1,38 +1,34 @@
 "use client";
 
-import Image from "next/image";
-import Avatar from "@/public/images/avatar.png";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Avatar from "@/public/images/avatar.png";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 // Technologies
-import {
-  SiTypescript,
-  SiNextdotjs,
-  SiReact,
-  SiTailwindcss,
-  SiMongodb,
-  SiNodedotjs,
-  SiExpress,
-  SiJavascript,
-  SiDocker,
-  SiGit,
-  SiGithub,
-  SiPostman,
-  SiKubernetes,
-  SiGitlab,
-  SiTerraform,
-  SiAnsible,
-  SiPython,
-  SiVisualstudiocode,
-  SiLinux,
-  SiNestjs,
-  SiFastapi,
-  SiPostgresql,
-} from "react-icons/si";
 import { useRef } from "react";
 import { FaAws } from "react-icons/fa6";
+import {
+  SiDocker,
+  SiExpress,
+  SiFastapi,
+  SiGit,
+  SiGithub,
+  SiGitlab,
+  SiLinux,
+  SiMongodb,
+  SiNestjs,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPostman,
+  SiPython,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiVisualstudiocode
+} from "react-icons/si";
 
 export default function Home() {
   const techsRef = useRef(null);
@@ -40,8 +36,8 @@ export default function Home() {
   const toolsRef = useRef(null);
   const toolsInView = useInView(toolsRef);
 
-  const fileId = "1Su1XYpFEsDkMtHzW4bFYOA_gBAWn33zO";
-  const resumeURL = `https://drive.google.com/uc?export=download&id=${fileId}`;
+  // const fileId = "1Su1XYpFEsDkMtHzW4bFYOA_gBAWn33zO";
+  // const resumeURL = `https://drive.google.com/uc?export=download&id=${fileId}`;
 
   function handleDownloadResume() {
     const a = document.createElement("a");
