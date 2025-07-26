@@ -8,33 +8,54 @@ import Link from "next/link";
 export default function Page() {
   const projects = [
     {
+      title: "Platform98",
+      roles: ["Backend Developer"],
+      description:
+        "A platform that takes care of your administrative and legal affairs. It helps small and medium size businesses to outsouce their tedious and time-consuming workloads",
+      link: "https://platform98.com/",
+    },
+    {
+      title: "AWS Community Day Cameroon",
+      roles: ["Backend Developer"],
+      description:
+        "The official website of the yearly AWS Community Day Cameroon event",
+      link: "https://community-day.vercel.app/",
+    },
+    {
       title: "Toolbox",
       roles: ["Project Lead", "Developer"],
       description:
         "A toolkit for seamless multi-region payment and sms sending integrations built on top of Stripe, Pawapay and Twilio",
-      link: "https://shorturl.at/jnLGo",
+      link: "https://github.com/INGENIO-237/toolbox",
     },
+    // {
+    //   title: "Cameroon E-Sport",
+    //   roles: ["Developer"],
+    //   description:
+    //     "A platform requested by the Cameroon E-Sport Federation, that will help them recruit and manage Gamers all around the country",
+    //   link: "https://shorturl.at/xN7CR",
+    // },
+    // {
+    //   title: "Latrice",
+    //   roles: ["Project Lead", "Developer"],
+    //   description:
+    //     "A hair style service based in the US that connects hair style professionals and customers",
+    //   link: "https://shorturl.at/e5oQf",
+    // },
     {
-      title: "Cameroon E-Sport",
+      title: "YaFoot-FC",
       roles: ["Developer"],
       description:
-        "A platform requested by the Cameroon E-Sport Federation, that will help them recruit and manage Gamers all around the country",
-      link: "https://shorturl.at/xN7CR",
+        "A web platform for managing the internal activities of the Yaounde II FC (YaFoot). Supporters can buy member's cards, articles(jerseys, goodies, etc...), and make donations to the club.",
+      link: "https://yafoot-fc.com",
     },
-    {
-      title: "Latrice",
-      roles: ["Project Lead", "Developer"],
-      description:
-        "A hair style service based in the US that connects hair style professionals and customers",
-      link: "https://shorturl.at/e5oQf",
-    },
-    {
-      title: "RACING FC",
-      roles: ["Developer"],
-      description:
-        "A web platform for managing the internal activities of the RACING FC of  Bafoussam. Supporters can buy member's cards, articles(jerseys, goodies, etc...), and make donations to the club.",
-      link: "https://shorturl.at/qSGKC",
-    },
+    // {
+    //   title: "RACING FC",
+    //   roles: ["Developer"],
+    //   description:
+    //     "A web platform for managing the internal activities of the RACING FC of  Bafoussam. Supporters can buy member's cards, articles(jerseys, goodies, etc...), and make donations to the club.",
+    //   link: "https://shorturl.at/qSGKC",
+    // },
     {
       title: "IME-SCHOOL",
       roles: ["Developer"],
@@ -42,19 +63,12 @@ export default function Page() {
         "Website of IME-SCHOOL, it presents the different programs and fields of study present there.",
       link: "https://www.ime-school.com/",
     },
-    {
-      title: "First Event",
-      roles: ["Project Lead", "Developer"],
-      description:
-        "Events management platform based in Canada for creating, managing and promoting local events",
-      // link: "https://link.dev",
-    },
     // {
-    //   title: "YaFoot-FC",
-    //   roles: ["Developer"],
+    //   title: "First Event",
+    //   roles: ["Project Lead", "Developer"],
     //   description:
-    //     "A web platform for managing the internal activities of the Yaounde II FC (YaFoot). Supporters can buy member's cards, articles(jerseys, goodies, etc...), and make donations to the club.",
-    //   link: "https://shorturl.at/q9fGA",
+    //     "Events management platform based in Canada for creating, managing and promoting local events",
+    //   // link: "https://link.dev",
     // },
     // {
     //   title: "Pokedex",
