@@ -11,7 +11,7 @@ export default function Page() {
       title: "Platform98",
       roles: ["Backend Developer"],
       description:
-        "A platform that takes care of your administrative and legal affairs. It helps small and medium size businesses to outsouce their tedious and time-consuming workloads",
+        "A comprehensive business services platform built with NestJS, providing digital solutions for company registration, document processing, and business management services in Cameroon and beyond.",
       link: "https://platform98.com/",
     },
     {
@@ -19,7 +19,7 @@ export default function Page() {
       roles: ["Backend Developer"],
       description:
         "The official website of the yearly AWS Community Day Cameroon event",
-      link: "https://community-day.vercel.app/",
+      link: "https://communityday.awscmr.com/",
     },
     {
       title: "Toolbox",
