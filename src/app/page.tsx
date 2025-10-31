@@ -2,12 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import Avatar from "@/public/images/avatar.png";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useAnimationControls } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 // Technologies
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { FaAws, FaJava } from "react-icons/fa6";
 import {
   SiAnsible,
@@ -41,6 +41,12 @@ export default function Home() {
   const backendInView = useInView(backendRef);
   const devopsRef = useRef(null);
   const devopsInView = useInView(devopsRef);
+  const [isBackendHovered, setIsBackendHovered] = useState(false);
+  const [isDevopsHovered, setIsDevopsHovered] = useState(false);
+  
+
+  
+
 
   // const fileId = "1Su1XYpFEsDkMtHzW4bFYOA_gBAWn33zO";
   // const resumeURL = `https://drive.google.com/uc?export=download&id=${fileId}`;
@@ -116,7 +122,7 @@ export default function Home() {
             <span className="px-3 py-1 bg-p_green/10 text-p_green rounded-full border border-p_green/20">🔧 Backend Engineer</span>
             <span className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">☁️ DevOps Enthusiast</span>
             <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">🏗️ Solution Architect</span>
-            <span className="px-3 py-1 bg-orange-500/10 text-orange-400 rounded-full border border-orange-500/20">👨‍🏫 Mentor</span>
+            <span className="px-3 py-1 bg-orange-500/10 text-orange-400 rounded-full border border-orange-500/20">👨🏫 Mentor</span>
           </motion.div>
 
           <motion.p
@@ -259,18 +265,17 @@ export default function Home() {
           className="relative"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-p_green/5 via-transparent to-p_green/5 rounded-2xl"></div>
-          <div className="overflow-hidden py-8 rounded-2xl border border-white/5">
-            <motion.div
-              animate={{ x: ["-100%", "0%"] }}
-              transition={{
-                x: {
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  duration: 25,
-                  ease: "linear",
-                },
-              }}
+          <div 
+            className="overflow-hidden py-8 rounded-2xl border border-white/5"
+            onMouseEnter={() => setIsBackendHovered(true)}
+            onMouseLeave={() => setIsBackendHovered(false)}
+          >
+            <div
               className="flex gap-12 w-max"
+              style={{
+                animation: 'scrollLeft 25s linear infinite',
+                animationPlayState: isBackendHovered ? 'paused' : 'running'
+              }}
             >
               <SiNodedotjs
                 size={70}
@@ -359,7 +364,7 @@ export default function Home() {
                 title="Express"
                 className="hover:text-gray-400 transition-all duration-500 flex-shrink-0 hover:scale-110 drop-shadow-lg"
               />
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       </motion.div>
@@ -430,18 +435,17 @@ export default function Home() {
           className="relative"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-purple-500/5 rounded-2xl"></div>
-          <div className="overflow-hidden py-8 rounded-2xl border border-white/5">
-            <motion.div
-              animate={{ x: ["0%", "-100%"] }}
-              transition={{
-                x: {
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  duration: 30,
-                  ease: "linear",
-                },
-              }}
+          <div 
+            className="overflow-hidden py-8 rounded-2xl border border-white/5"
+            onMouseEnter={() => setIsDevopsHovered(true)}
+            onMouseLeave={() => setIsDevopsHovered(false)}
+          >
+            <div
               className="flex gap-12 w-max"
+              style={{
+                animation: 'scrollRight 30s linear infinite',
+                animationPlayState: isDevopsHovered ? 'paused' : 'running'
+              }}
             >
               <FaAws
                 size={70}
@@ -516,7 +520,7 @@ export default function Home() {
                 title="Terraform"
                 className="hover:text-violet-600 transition-all duration-500 flex-shrink-0 hover:scale-110 drop-shadow-lg"
               />
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       </motion.div>
