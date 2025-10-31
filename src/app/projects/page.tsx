@@ -2,8 +2,9 @@
 
 import { getKey } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Code, ExternalLink, Users } from "lucide-react";
+import { ExternalLink, Code, Users } from "lucide-react";
 import Link from "next/link";
+
 
 export default function Page() {
   const projects = [

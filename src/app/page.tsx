@@ -95,7 +95,7 @@ export default function Home() {
               🌟 Welcome to my digital space
             </motion.div>
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Hey, I'm Ben Hamadou
+              Hey, I&apos;m Ben Hamadou
               <br />
               <span className="text-p_green text-3xl md:text-4xl lg:text-5xl">(INGENIO)</span>
             </h1>
@@ -128,7 +128,7 @@ export default function Home() {
             <span className="text-p_green font-semibold">cloud infrastructure</span>, and{" "}
             <span className="text-p_green font-semibold">mentoring developers</span>.
             <br />
-            💡 <em>"Giving back to the community is the key."</em>
+            💡 <em>&quot;Giving back to the community is the key.&quot;</em>
           </motion.p>
 
           <motion.div

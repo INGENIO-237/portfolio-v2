@@ -2,9 +2,10 @@
 
 import { getKey } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Calendar, Clock, ExternalLink, BookOpen } from "lucide-react";
+import { Calendar, Clock, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+
 
 export default function Page() {
   const [selectedCategory, setSelectedCategory] = useState("All");

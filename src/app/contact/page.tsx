@@ -6,6 +6,7 @@ import { Linkedin, Mail, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { SiGithub, SiWakatime } from "react-icons/si";
 
+
 export default function Page() {
   const socials = [
     {
@@ -77,7 +78,7 @@ export default function Page() {
           transition={{ delay: 0.4 }}
           className="font-bold text-4xl md:text-5xl lg:text-6xl mb-6 bg-gradient-to-r from-white dark:from-white from-gray-900 to-gray-300 dark:to-gray-300 to-gray-600 bg-clip-text text-transparent"
         >
-          Let's <span className="text-p_green">Connect</span>
+          Let&apos;s <span className="text-p_green">Connect</span>
         </motion.h1>
         
         <motion.p
@@ -86,7 +87,7 @@ export default function Page() {
           transition={{ delay: 0.6 }}
           className="text-lg md:text-xl text-gray-300 dark:text-gray-300 text-gray-600 leading-relaxed"
         >
-          I'm always excited to discuss new opportunities, collaborate on projects,
+          I&apos;m always excited to discuss new opportunities, collaborate on projects,
           <br className="hidden md:block" />
           or simply have a conversation about technology and innovation. 🚀
         </motion.p>
@@ -148,7 +149,7 @@ export default function Page() {
           </h3>
           <p className="text-gray-300 dark:text-gray-300 text-gray-600 mb-6">
             Whether you have a project in mind, want to discuss opportunities, or just want to say hello,
-            I'd love to hear from you. Let's build something great together!
+            I&apos;d love to hear from you. Let&apos;s build something great together!
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <span className="px-4 py-2 bg-p_green/10 text-p_green rounded-full border border-p_green/20 text-sm">
