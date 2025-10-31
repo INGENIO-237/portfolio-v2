@@ -110,7 +110,7 @@ export default function Page() {
               <Link
                 href={social.link}
                 target="_blank"
-                className="relative block bg-zinc-900/50 dark:bg-zinc-900/50 bg-white/80 backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200 rounded-2xl p-6 hover:border-p_green/30 transition-all duration-500 group"
+                className="relative block bg-zinc-900/50 dark:bg-zinc-900/50 bg-white backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200/50 rounded-2xl p-6 hover:border-p_green/30 transition-all duration-500 group shadow-lg dark:shadow-none"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className={`p-3 rounded-xl bg-gradient-to-r ${social.color} text-white`}>
@@ -143,7 +143,7 @@ export default function Page() {
         transition={{ delay: 0.8, duration: 0.6 }}
         className="text-center mt-20 max-w-2xl mx-auto"
       >
-        <div className="bg-zinc-900/30 dark:bg-zinc-900/30 bg-white/90 backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200 rounded-2xl p-8">
+        <div className="bg-zinc-900/30 dark:bg-zinc-900/30 bg-white backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200/50 rounded-2xl p-8 shadow-lg dark:shadow-none">
           <h3 className="text-2xl font-bold mb-4 text-white dark:text-white text-gray-900">
             Ready to start something amazing? ✨
           </h3>

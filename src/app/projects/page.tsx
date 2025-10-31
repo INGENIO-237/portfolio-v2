@@ -119,7 +119,7 @@ export default function Page() {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-p_green/10 to-blue-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <div className="relative bg-zinc-900/50 dark:bg-zinc-900/50 bg-white/80 backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200 rounded-2xl p-6 h-full hover:border-p_green/30 transition-all duration-500">
+              <div className="relative bg-zinc-900/50 dark:bg-zinc-900/50 bg-white backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200/50 rounded-2xl p-6 h-full hover:border-p_green/30 transition-all duration-500 shadow-lg dark:shadow-none">
                 {/* Category Badge */}
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-3 py-1 bg-p_green/20 text-p_green text-xs rounded-full border border-p_green/30">
@@ -193,14 +193,15 @@ export default function Page() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="text-center mt-20"
+        className="text-center mt-20 max-w-2xl mx-auto"
       >
-        <div className="max-w-2xl mx-auto">
-          <h3 className="text-2xl font-bold mb-4 text-white">
+        <div className="bg-zinc-900/30 dark:bg-zinc-900/30 bg-white backdrop-blur-sm border border-white/10 dark:border-white/10 border-gray-200/50 rounded-2xl p-8 shadow-lg dark:shadow-none">
+          <h3 className="text-2xl font-bold mb-4 text-white dark:text-white text-gray-900">
             Interested in collaborating? 🤝
           </h3>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-300 dark:text-gray-300 text-gray-600 mb-6">
             I&apos;m always open to discussing new opportunities and exciting projects.
+            Let&apos;s build something amazing together!
           </p>
           <Link
             href="/contact"
