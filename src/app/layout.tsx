@@ -13,9 +13,46 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "BEN HAMADOU A.(INGENIO) - Portfolio",
-  description:
-    "Hey, I'm Ben Hamadou (INGENIO). I am a full-stack software engineer with over 3 years of professional experience, specializing in backend development. My expertise lies in crafting robust and scalable SaaS-based architectures on the Amazon AWS platform.",
+  title: {
+    default: "Ben Hamadou (INGENIO) - Backend Developer & DevOps Engineer",
+    template: "%s | Ben Hamadou (INGENIO)"
+  },
+  description: "Backend Developer with 3+ years experience in Node.js, NestJS, AWS, and DevOps. Specializing in scalable APIs, microservices, and cloud infrastructure. Available for remote opportunities.",
+  keywords: ["Backend Developer", "Node.js", "NestJS", "TypeScript", "AWS", "DevOps", "API Development", "Microservices", "Cloud Architecture", "Remote Developer", "Cameroon Developer"],
+  authors: [{ name: "Ben Hamadou Abdel-Kalif", url: "https://github.com/INGENIO-237" }],
+  creator: "Ben Hamadou (INGENIO)",
+  publisher: "Ben Hamadou (INGENIO)",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://ingenio-portfolio.vercel.app',
+    title: 'Ben Hamadou (INGENIO) - Backend Developer & DevOps Engineer',
+    description: 'Backend Developer with 3+ years experience in Node.js, NestJS, AWS, and DevOps. Specializing in scalable APIs, microservices, and cloud infrastructure.',
+    siteName: 'Ben Hamadou Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ben Hamadou (INGENIO) - Backend Developer & DevOps Engineer',
+    description: 'Backend Developer with 3+ years experience in Node.js, NestJS, AWS, and DevOps.',
+    creator: '@INGENIO237',
+  },
+  verification: {
+    google: 'google-site-verification-code',
+  },
+  alternates: {
+    canonical: 'https://ingenio-portfolio.vercel.app',
+  },
 };
 
 export default function RootLayout({

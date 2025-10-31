@@ -1,8 +1,6 @@
 "use client";
 
-import Hat from "@/public/images/luffy-strawhat.gif";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function ComingSoon() {
   return (
@@ -13,13 +11,20 @@ export default function ComingSoon() {
         transition={{ duration: 1 }}
         className="flex-1 h-[80vh] flex flex-col items-center justify-center gap-5"
       >
-        <Image
-          src={Hat}
-          width={300}
-          height={300}
-          alt="luffy-strawhat"
-          className="pointer-events-none"
-        />
+        <motion.div
+          animate={{ 
+            rotate: [0, 10, -10, 0],
+            scale: [1, 1.1, 1]
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="text-9xl pointer-events-none"
+        >
+          🚧
+        </motion.div>
         <div className="h-20 z-20 flex items-center">
           <h1 className="font-bold text-2xl md:text-3xl">Coming Soon</h1>
         </div>
