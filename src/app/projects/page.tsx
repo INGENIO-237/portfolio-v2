@@ -163,7 +163,7 @@ export default function Page() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-gray-700/50 dark:bg-gray-700/50 bg-gray-100 text-gray-300 dark:text-gray-300 text-gray-700 text-xs rounded border border-gray-600/50 dark:border-gray-600/50 border-gray-300"
+                        className="px-2 py-1 dark:bg-gray-700/50 bg-gray-100 dark:text-gray-300 text-gray-700 text-xs rounded border dark:border-gray-600/50 border-gray-300"
                       >
                         {tech}
                       </span>
