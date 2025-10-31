@@ -2,12 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import Avatar from "@/public/images/avatar.png";
-import { motion, useInView, useAnimationControls } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-// Technologies
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import { FaAws, FaJava } from "react-icons/fa6";
 import {
   SiAnsible,
@@ -37,19 +36,8 @@ import {
 } from "react-icons/si";
 
 export default function Home() {
-  const backendRef = useRef(null);
-  const backendInView = useInView(backendRef);
-  const devopsRef = useRef(null);
-  const devopsInView = useInView(devopsRef);
   const [isBackendHovered, setIsBackendHovered] = useState(false);
   const [isDevopsHovered, setIsDevopsHovered] = useState(false);
-  
-
-  
-
-
-  // const fileId = "1Su1XYpFEsDkMtHzW4bFYOA_gBAWn33zO";
-  // const resumeURL = `https://drive.google.com/uc?export=download&id=${fileId}`;
 
   function handleDownloadResume() {
     const a = document.createElement("a");
