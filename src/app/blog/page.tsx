@@ -172,7 +172,7 @@ export default function Page() {
                 </div>
 
                 {/* Post Title */}
-                <h2 className="font-bold text-xl mb-3 text-white dark:text-white text-gray-900 group-hover:text-p_green transition-colors duration-300">
+                <h2 className="font-bold text-xl mb-3 dark:text-white text-gray-900 group-hover:text-p_green transition-colors duration-300">
                   {post.title}
                 </h2>
 
