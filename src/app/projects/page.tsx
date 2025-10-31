@@ -132,7 +132,7 @@ export default function Page() {
                 </div>
 
                 {/* Project Title */}
-                <h2 className="font-bold text-2xl mb-3 text-white dark:text-white text-gray-900 group-hover:text-p_green transition-colors duration-300">
+                <h2 className="font-bold text-2xl mb-3 dark:text-white text-gray-900 group-hover:text-p_green transition-colors duration-300">
                   {project.title}
                 </h2>
 
@@ -196,7 +196,7 @@ export default function Page() {
         className="text-center mt-20 max-w-2xl mx-auto"
       >
         <div className="dark:bg-zinc-900/30 bg-white backdrop-blur-sm border dark:border-white/10 border-gray-200/50 rounded-2xl p-8 shadow-lg dark:shadow-none">
-          <h3 className="text-2xl font-bold mb-4 text-white dark:text-white text-gray-900">
+          <h3 className="text-2xl font-bold mb-4 dark:text-white text-gray-900">
             Interested in collaborating? 🤝
           </h3>
           <p className="text-gray-300 dark:text-gray-300 text-gray-600 mb-6">
