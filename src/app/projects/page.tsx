@@ -9,6 +9,24 @@ import Link from "next/link";
 export default function Page() {
   const projects = [
     {
+      title: "Trakr",
+      roles: ["Backend Developer"],
+      description:
+        "A budget management and expenses tracker application built with Spring Boot. Features comprehensive expense tracking, budget management, and financial monitoring capabilities.",
+      link: "https://github.com/INGENIO-237/trakr",
+      tech: ["Java 21", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Maven"],
+      category: "Finance App"
+    },
+    {
+      title: "Socialy",
+      roles: ["Backend Developer"],
+      description:
+        "A modern social media platform backend enabling users to connect, share content, and engage with communities. Features real-time messaging, content sharing, user profiles, and social interactions.",
+      link: "https://github.com/INGENIO-237/socialy",
+      tech: ["NestJS", "Socket.io", "PostgreSQL", "Google Auth", "S3"],
+      category: "Social Platform"
+    },
+    {
       title: "Platform98",
       roles: ["Backend Developer"],
       description:
@@ -44,15 +62,16 @@ export default function Page() {
       tech: ["React", "Node.js", "MySQL"],
       category: "Sports Platform"
     },
-    {
-      title: "IME-SCHOOL",
-      roles: ["Developer"],
-      description:
-        "Website of IME-SCHOOL, it presents the different programs and fields of study present there.",
-      link: "https://www.ime-school.com/",
-      tech: ["Next.js", "React", "TailwindCSS"],
-      category: "Educational Website"
-    },
+    // {
+    //   title: "IME-SCHOOL",
+    //   roles: ["Developer"],
+    //   description:
+    //     "Website of IME-SCHOOL, it presents the different programs and fields of study present there.",
+    //   link: "https://www.ime-school.com/",
+    //   tech: ["Next.js", "React", "TailwindCSS"],
+    //   category: "Educational Website"
+    // },
+
   ];
 
   return (
