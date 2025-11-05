@@ -95,7 +95,7 @@ export default function Home() {
               🌟 Welcome to my digital space
             </motion.div>
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              Hey, I&apos;m Ben Hamadou
+              Hey, I&apos;m ABDEL-KALIF Ben Hamadou
               <br />
               <span className="text-p_green text-3xl md:text-4xl lg:text-5xl">(INGENIO)</span>
             </h1>
@@ -119,7 +119,9 @@ export default function Home() {
             transition={{ delay: 0.9 }}
             className="text-lg md:text-xl leading-relaxed text-gray-300"
           >
-            Backend Engineer with{" "}
+            Backend Engineer in{" "}
+            <span className="text-p_green font-semibold">Douala, Cameroon</span>{" "}
+            with{" "}
             <span className="text-p_green font-semibold">3+ years of experience</span>{" "}
             crafting robust, scalable server-side applications. 🚀
             <br className="hidden md:block" />
@@ -139,7 +141,7 @@ export default function Home() {
           >
             <div className="flex items-center gap-1">
               <span>📍</span>
-              <span>Cameroon</span>
+              <span>Douala, Cameroon</span>
             </div>
             <div className="flex items-center gap-1">
               <span>💼</span>
